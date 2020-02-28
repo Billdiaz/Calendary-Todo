@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import Hello from './Hello';
-import './style.css';
+import Hola from './component/Hello';
+import Test from './component/Test';
+import './css/style.css';
 
 class App extends Component {
   constructor() {
@@ -14,10 +15,8 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Hello name={this.state.name} />
-        <p>
-          Start editing to see some magic happen :)
-        </p>
+        <Hola name={this.state.name} />
+        <Test mensaje= "Que tal??"></Test>
       </div>
     );
   }
